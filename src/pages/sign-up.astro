@@ -1,10 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { ClerkLayout } from "astro-clerk-auth/components/control";
-import { SignUp } from 'astro-clerk-auth/components/react'
+import { SignUp as ClerkSignUp } from 'astro-clerk-auth/components/react'
 ---
 
 <Layout title="Sign up for Astro + Clerk">
-  <SignUp />
+  <ClerkLayout>
+    <ClerkSignUp />
+  </ClerkLayout>
 </Layout>
 
